@@ -3,7 +3,7 @@ version: "3.8"
 services:
   web:
     image: httpd:alpine
-    container_name: web_landing
+    container_name: ${CONTAINER_NAME}
     restart: unless-stopped
     ports:
       - "${HTTP_PORT}:80"
